@@ -1,0 +1,45 @@
+.products__container {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    font-size: 3rem;
+    color: gray;
+    display: inline-block;
+    user-select: none;
+}
+
+.title:hover {
+    color: black;
+}
+
+.products-blog {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 100px;
+}
+.product-img {
+    width: 180px;
+}
+
+.item-title {
+    color: black;
+    user-select: none;
+}
+.item-title:hover {
+    color: gray;
+}
+
+.link {
+    text-decoration: none;
+}
+.item {
+    padding: 0 15px;
+}

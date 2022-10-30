@@ -1,0 +1,51 @@
+.single-item{
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.product-img img{
+    width: 300px;
+}
+.product-title{
+    width: 40%;
+    padding: 40px;
+}
+.buying-blog{
+    margin-top: 15px;
+}
+.purchase{
+    color: white;
+    background: linear-gradient(to top, black, white);
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+.purchase:hover {
+    background: linear-gradient(to bottom, black, white);
+}
+.single-item {
+    margin-top: 100px;
+}
+.x-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    font-size: 2rem;
+    border: none;
+    font-weight: 500;
+    padding: 1px 10px;
+}
+.x-btn:hover {
+    transition: 0.8s;
+    background-color: red;
+    color: white;
+}
+.x-btn-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
