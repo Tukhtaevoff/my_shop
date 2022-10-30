@@ -1,0 +1,23 @@
+article{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.product-img img{
+    width: 300px;
+}
+.product-title{
+    width: 40%;
+}
+.back-blog{
+    margin-top: 15px;
+}
+.back{
+    color: white;
+    background: blue;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+}
