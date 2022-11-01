@@ -2,10 +2,11 @@ header {
     background-color: #fff;
     top: 0;
     position: sticky;
+    z-index: 5;
+    box-shadow: 0 0 15px 5px gray;
 }
-* {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+header:hover {
+    box-shadow: 0 0 30px 5px gray;
 }
 .header__container {
     max-width: 1310px;
@@ -20,17 +21,37 @@ header {
     width: 200px;
 }
 
-.link {
+.header__link {
     text-decoration: none;
-    font-size: 1.125rem;
-    font-weight: 600;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: gray;
+    max-width: 100px;
+    position: relative;
+   font-family: monospace;
 }
 
-.link:hover {
-    color: blueviolet;
+.header__link:hover::before {
+    height: 3px;
+    background-color: #34568B;
+    content: '';
+    width: 100%;
+    display: block;
+    transition-delay: 2s;
+    position: absolute;
+    bottom: -5px;
 }
-.link:active {
-    color: aqua;
+.header__link:focus {
+    color: #34568B;
+}
+.header__link:focus::before {
+    height: 3px;
+    background-color: #34568B;
+    content: '';
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: -5px;
 }
 
 .navbar {

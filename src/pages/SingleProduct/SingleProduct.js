@@ -13,10 +13,11 @@ const SingleProduct = () => {
 
   return (
     <article className="single-item">
-      <Link className="x-btn-link" to={'/'}>
-      <button className="x-btn" type="button">
+      <Link className="x-btn-link" to={"/"}>
+        <button className="x-btn" type="button">
           x
-      </button>
+        </button>
+        <p className="close-text">Close</p>
       </Link>
       <div className="product-img">
         <img src={singleUser.image} alt={singleUser.title} />

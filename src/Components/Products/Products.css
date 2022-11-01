@@ -14,10 +14,8 @@
     color: gray;
     display: inline-block;
     user-select: none;
-}
-
-.title:hover {
-    color: black;
+    padding: 30px 0;
+    
 }
 
 .products-blog {
@@ -32,6 +30,7 @@
 .item-title {
     color: black;
     user-select: none;
+    padding-top: 20px;
 }
 .item-title:hover {
     color: gray;
@@ -41,5 +40,21 @@
     text-decoration: none;
 }
 .item {
-    padding: 0 15px;
+    border-radius: 15%;
+    padding: 15px 15px;
+    box-shadow: 0 0 10px 5px #ddd;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item:hover {
+    box-shadow: 0 0 20px 5px gray;
+}
+.img-blog img {
+    transition: 1s;
+}
+.img-blog img:hover {
+    transform: scale(1.2);
+    z-index: 1;
 }
