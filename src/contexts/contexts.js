@@ -7,19 +7,20 @@ let url = 'https://fakestoreapi.com/products';
 const Context = ({ children }) => {
 
     const [isData, setIsData] = useState([]);
+    const [searchItem, setSearchItem] = useState('');
 
     useEffect(() => {
         fetch(url)
         .then((res) => res.json())
         .then((data) => setIsData(data))
-    }, [])
+    }, [searchItem])
 
     if (!isData) {
         return []
     }
 
     return (
-        <AppContext.Provider value={{isData, setIsData}}>
+        <AppContext.Provider value={{isData, setIsData, searchItem, setSearchItem}}>
             {children}
         </AppContext.Provider>
     )

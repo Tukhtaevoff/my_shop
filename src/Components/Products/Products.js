@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useData } from "../../contexts/contexts";
+import SearchForm from "../SearchForm/SearchForm";
 import "./Products.css";
 
 const Products = () => {
@@ -8,6 +9,9 @@ const Products = () => {
 
   return (
     <main>
+      <section>
+        <SearchForm />
+      </section>
       <section id="products" className="products">
         <div className="products__container">
           <h1 className="title">Our products</h1>
