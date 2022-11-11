@@ -3,11 +3,9 @@ header {
     top: 0;
     position: sticky;
     z-index: 5;
-    box-shadow: 0 0 15px 5px gray;
+    box-shadow: 0 0 10px 5px #f2f2f2;
 }
-header:hover {
-    box-shadow: 0 0 30px 5px gray;
-}
+
 .header__container {
     max-width: 1310px;
     margin: 0 auto;
@@ -33,7 +31,7 @@ header:hover {
 
 .header__link:hover::before {
     height: 3px;
-    background-color: #34568B;
+    background-color: green;
     content: '';
     width: 100%;
     display: block;
@@ -42,11 +40,11 @@ header:hover {
     bottom: -5px;
 }
 .header__link:focus {
-    color: #34568B;
+    color: green;
 }
 .header__link:focus::before {
     height: 3px;
-    background-color: #34568B;
+    background-color: green;
     content: '';
     width: 100%;
     display: block;

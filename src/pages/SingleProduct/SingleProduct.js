@@ -12,7 +12,7 @@ const SingleProduct = () => {
   });
 
   return (
-    <article className="single-item">
+    <article key={id} className="single-item">
       <Link className="x-btn-link" to={"/"}>
         <button className="x-btn" type="button">
           x

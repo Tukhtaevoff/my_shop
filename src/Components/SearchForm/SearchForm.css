@@ -1,5 +1,5 @@
 .search {
-    width: 400px;
+    width: 500px;
     border-radius: 200px;
     height: 40px;
     padding: 0 0 0 30px;
@@ -8,7 +8,7 @@
     position: relative;
     font-size: 1.2rem;
     font-weight: 500;
-    border: 2px solid rgb(4, 4, 102);
+    border: 2px solid gray;
 }
 .search::placeholder {
     color: rgb(159, 156, 156);
@@ -25,7 +25,7 @@
     border: none;
     font-size: 1.5rem;
     position: absolute;
-    right: 560px;
+    right: 1px;
 }
 .search-btn:hover {
     background-color: #fff;
@@ -37,8 +37,10 @@
 .search-form {
     display: flex;
     width: 900px;
+    position: relative;
     align-items: center;
     justify-content: center;
+    width: 500px;
 }
 
 .search-container {

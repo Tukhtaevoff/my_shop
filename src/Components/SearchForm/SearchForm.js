@@ -1,33 +1,31 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
+import { useRef } from "react";
 import { useData } from "../../contexts/contexts";
 import "./SearchForm.css";
 
 const SearchForm = () => {
-  const { setSearchItem } = useData();
-  const searchValue = useRef("");
+  const { setSearchItem, isData } = useData();
+  const searchRef = useRef('');
+  const searchRefValue = searchRef.current.value;
+  console.log(searchRefValue);
 
-  const onChangeCase = (evt) => {
-    setSearchItem(evt.target.value);
-  };
+  const handleSubmit = (evt) => {
+    evt.preventDefault()
 
-  useEffect(() => {
-    setSearchItem(searchValue.current.focus());
-  }, []);
+    const filteredArr = isData.filter((product) => product.title.includes(searchRefValue) || product.description.includes(searchRefValue))
+    setSearchItem(filteredArr)
 
-  const productSubmit = (evt) => {
-    evt.preventDefault();
-  };
+  }
 
   return (
     <section>
       <div className="search-container">
-        <form className="search-form" action="#" onSubmit={productSubmit}>
+        <form className="search-form" onSubmit={handleSubmit}>
           <input
+            ref={searchRef}
             className="search"
-            ref={searchValue}
             name="search"
-            onChange={onChangeCase}
-            type="search"
+            type="text"
             autoComplete="off"
             placeholder="Search..."
           />
