@@ -1,0 +1,33 @@
+.search-form{
+    position: relative;
+}
+.search-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search{
+    width: 400px;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: 1px solid grey;
+}
+.search::placeholder{
+    color: grey;
+    font-size: 1.1rem;
+    display: flex;
+    padding: 15px 0;
+
+}
+.search-btn{
+    position: absolute;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: blue;
+    color: white;
+    top: 3px;
+    right: 3px;
+}

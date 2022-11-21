@@ -1,0 +1,17 @@
+.contact__intro{
+    background-image: url('../../assets/image/contact-intro.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.intro__container{
+    max-width: 1310px;
+    height: 100vh;
+}
+.intro__title{
+    margin: 0;
+    font-size: 5rem;
+    padding: 320px 435px;
+    color: white;
+    text-shadow: 2px 3px black;
+}
