@@ -11,6 +11,8 @@ const SingleProduct = () => {
     return user.id === +id;
   });
 
+  // Single Product is here
+
   return (
     <article key={id} className="single-item">
       <Link className="x-btn-link" to={"/"}>
