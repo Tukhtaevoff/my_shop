@@ -3,7 +3,7 @@ header {
     top: 0;
     position: sticky;
     z-index: 5;
-    box-shadow: 0 0 10px 5px #f2f2f2;
+    box-shadow: 0 0 15px 1px #151515;
 }
 
 .header__container {
@@ -19,6 +19,24 @@ header {
     width: 200px;
 }
 
+.header-link__wrapper {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    user-select: none;
+}
+
+.moon-btn {
+    width: 50px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    height: 50px;
+    font-size: x-large;
+    border-radius: 50%;
+}
+
 .header__link {
     text-decoration: none;
     font-size: 1.4rem;
@@ -26,7 +44,7 @@ header {
     color: gray;
     max-width: 100px;
     position: relative;
-   font-family: monospace;
+    font-family: monospace;
 }
 
 .header__link:hover::before {
@@ -38,9 +56,6 @@ header {
     transition-delay: 2s;
     position: absolute;
     bottom: -5px;
-}
-.header__link:focus {
-    color: green;
 }
 .header__link:focus::before {
     height: 3px;
@@ -60,6 +75,7 @@ header {
     align-items: center;
     display: flex;
     gap: 50px;
+    user-select: none;
 }
 
 .navbar__list-item {

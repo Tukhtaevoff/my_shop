@@ -1,0 +1,21 @@
+.contact-intro {
+    background-image: url("../../../assets/images/contact-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.contact-intro__container {
+    max-width: 1310px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.contact__title {
+    font-size: 5rem;
+    padding: 265px 310px;
+    color: white;
+    user-select: auto;
+    text-shadow: 2px 3px black;
+}
