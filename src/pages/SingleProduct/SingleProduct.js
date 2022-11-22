@@ -11,23 +11,27 @@ const SingleProduct = () => {
     return user.id === +id;
   });
 
+  const colorStyles = { 
+    color: color 
+  }
+
   // Single Product is here
 
   return (
     <article key={id} className="single-item">
       <Link className="x-btn-link" to={"/"}>
         <button className="x-btn" type="button">
-          <span style={{ color: color }} title="Close">x</span>
+          <span style={colorStyles} title="Close">x</span>
         </button>
       </Link>
       <div className="img-wrapper">
         <img src={singleUser.image} alt={singleUser.title} />
       </div>
       <div className="product-title">
-        <h2 style={{ color: color }}>{singleUser.title}</h2>
-        <strong style={{ color: color }}>$ {singleUser.price}</strong>
-        <p style={{ color: color }}>{singleUser.description}</p>
-        <span style={{ color: color }}>{singleUser.category}</span>
+        <h2 style={colorStyles}>{singleUser.title}</h2>
+        <strong style={colorStyles}>$ {singleUser.price}</strong>
+        <p style={colorStyles}>{singleUser.description}</p>
+        <span style={colorStyles}>{singleUser.category}</span>
         <div className="buying-blog">
           <Link className="purchase" to="/">
             Purchase

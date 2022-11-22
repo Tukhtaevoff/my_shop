@@ -5,26 +5,45 @@ import "./Contact-section.css";
 
 const ContactSection = () => {
   const { color } = useData();
+
+  const divStyles = {
+    flex: "6",
+    display: "flex",
+    flexDirection: "column"
+  }
+
+  const textStyles = {
+    fontSize: "24px",
+    fontWeight: "500",
+    textAlign: "center",
+    lineHeight: "3rem",
+  }
+
+  const linkStyles = {
+    width: "160px", 
+    margin: "0 auto"
+  }
+
+  const imageStyles = { 
+    border: "0", 
+    flex: "6" 
+  }
+
   return (
     <section className="contact-section">
       <div className="contact-section__container" style={{ color: color }}>
         <h2 className="contact-section__title">Our maps</h2>
         <div className="contact-section__wrapper">
-          <div style={{flex: "6", display: "flex", flexDirection: "column"}}>
+          <div style={divStyles}>
             <p
-              style={{
-                fontSize: "24px",
-                fontWeight: "500",
-                textAlign: "center",
-                lineHeight: "3rem",
-              }}
+              style={textStyles}
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
               expedita, tenetur molestiae voluptates aspernatur saepe veniam
               vero. Distinctio doloribus laudantium dolores. Consequatur
               corrupti obcaecati neque. Nisi quis ullam possimus cupiditate.
             </p>
-            <Link className="about-section_btn" style={{width: "160px", margin: "0 auto"}} to={'/about'}>
+            <Link className="about-section_btn" style={linkStyles} to={'/about'}>
               About us
             </Link>
           </div>
@@ -33,7 +52,7 @@ const ContactSection = () => {
             title="tashkent Amir Temur map"
             width="600"
             height="450"
-            style={{ border: "0", flex: "6" }}
+            style={imageStyles}
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"

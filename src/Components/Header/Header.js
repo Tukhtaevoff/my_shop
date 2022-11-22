@@ -7,6 +7,10 @@ import { useData } from "../../contexts/contexts";
 const Header = () => {
   const { appBackground, setAppBackground, headerBackground, setHeaderBackground, footerBackground, setFooterBackground, moon, setMoon, color, setColor } = useData();
 
+  const colorStyle = {
+    color: color
+  }
+  
   return (
     <header style={{ backgroundColor: headerBackground }}>
       <div className="container header__container">
@@ -18,17 +22,17 @@ const Header = () => {
         <nav className="navbar">
           <ul className="navbar__list">
             <li className="navbar__list-item">
-              <Link style={{color: color}} className="header__link" to="/">
+              <Link style={colorStyle} className="header__link" to="/">
                 Home
               </Link>
             </li>
             <li className="navbar__list-item">
-              <Link style={{color: color}} className="header__link" to="/about">
+              <Link style={colorStyle} className="header__link" to="/about">
                 About
               </Link>
             </li>
             <li className="navbar__list-item">
-              <Link style={{color: color}} className="header__link" to="/contact">
+              <Link style={colorStyle} className="header__link" to="/contact">
                 Contact
               </Link>
             </li>
@@ -45,7 +49,7 @@ const Header = () => {
                 }}
               >
                 {moon ? (
-                  <i style={{color: color}} class="fa-solid fa-sun"></i>
+                  <i style={colorStyle} class="fa-solid fa-sun"></i>
                 ) : (
                   <i class="fa-solid fa-moon"></i>
                 )}

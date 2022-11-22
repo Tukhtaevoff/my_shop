@@ -1,8 +1,12 @@
 import { useState, useEffect, useContext } from "react";
 import React, { createContext } from "react";
+import axios from "axios";
 
 export const AppContext = createContext();
-let url = "https://fakestoreapi.com/products";
+
+const api = axios.create({
+  baseURL: 'https://fakestoreapi.com/products'
+})
 
 const Context = ({ children }) => {
   const [isData, setIsData] = useState([]);
@@ -14,9 +18,8 @@ const Context = ({ children }) => {
   const [appBackground, setAppBackground] = useState("white");
 
   useEffect(() => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => setIsData(data));
+    api.get('/')
+      .then((res) => setIsData(res.data))
   }, []);
 
   if (!isData) {

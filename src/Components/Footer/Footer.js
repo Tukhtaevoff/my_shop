@@ -6,8 +6,13 @@ import { useData } from "../../contexts/contexts";
 
 const Footer = () => {
   const {footerBackground} = useData();
+
+  const footerStyle = {
+    backgroundColor: footerBackground
+  }
+  
   return (
-    <footer style={{backgroundColor: footerBackground}} className="footer">
+    <footer style={footerStyle} className="footer">
       <div className="footer__container">
         <div className="footer-link__wrapper">
           <Link to={"/"}>
