@@ -8,7 +8,7 @@ import { useState } from "react";
 import "./Products.css";
 
 const Products = () => {
-  const { isData, setIsData } = useData();
+  const { isData, color, setIsData } = useData();
 
   const AllItems = ["All", ...new Set(isData.map((item) => item.category))];
 
@@ -32,12 +32,13 @@ const Products = () => {
     <main>
       <SearchForm />
       <Categories categories={categories} filteredArr={filteredArr} />
+      <marquee scrollamount="20" style={{color, borderBottom: "3px dashed #ddd", borderTop: "3px dashed #ddd", margin: "30px 0 60px 0"}} behavior="scroll" direction="right">
+        <h1 className="title" style={{padding: "20px", margin: "0"}}>- - - -  Our products  - - - -</h1>
+      </marquee>
       <section id="products" className="products">
         <div className="products__container">
-          <h1 className="title">Our products</h1>
           <div className="products-blog">
-            {
-              isData.map((product) => {
+            {isData.map((product) => {
               const { title, id, image } = product;
               return (
                 <Link className="link item" to={`/singleProduct/${id}`}>

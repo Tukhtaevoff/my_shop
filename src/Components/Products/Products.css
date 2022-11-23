@@ -39,7 +39,7 @@
 .item {
     border-radius: 15%;
     padding: 15px 15px;
-    box-shadow: 0 0 20px 0.1px #ddd;
+    box-shadow: 0 0 7px 0.1px #ddd;
     height: 500px;
     background-color: white;
     display: flex;

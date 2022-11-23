@@ -7,8 +7,10 @@
 
 .category__btn {
     background: none;
-    color: green;
+    color: white;
+    background-color: green;
     border: none;
+    margin: 10px;
     outline: none;
     padding: 10px 30px;
     font-size: 1rem;
@@ -17,6 +19,8 @@
 }
 .category__btn:hover {
     cursor: pointer;
+    background-color: white;
+    color: green;
 }
 .category__btn:focus {
     color: #fff;

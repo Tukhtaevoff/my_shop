@@ -22,27 +22,27 @@ const Footer = () => {
         <nav className="footer__navbar">
           <ul className="navbar__list">
             <li className="navbar__list-item">
-              <a className="footer__link" href="https://github.com/">
+              <a className="footer__link" href="https://github.com/Tukhtaevoff">
                 <i class="fa-brands fa-github"></i>
               </a>
             </li>
             <li className="navbar__list-item">
-              <a className="footer__link" href="https://www.facebook.com/">
+              <a className="footer__link" href="https://www.facebook.com/tukhtaev.off/">
                 <i class="fa-brands fa-facebook"></i>
               </a>
             </li>
             <li className="navbar__list-item">
-              <a className="footer__link" href="https://www.instagram.com/">
+              <a className="footer__link" href="https://www.instagram.com/tukhtaevoff/">
                 <i class="fa-brands fa-instagram"></i>
               </a>
             </li>
             <li className="navbar__list-item">
-              <a className="footer__link" href="https://www.telegram.org/">
+              <a className="footer__link" href="https://t.me/Tukhtaev_off">
                 <i class="fa-brands fa-telegram"></i>
               </a>
             </li>
             <li className="navbar__list-item">
-              <a className="footer__link" href="https://twitter.com/">
+              <a className="footer__link" href="https://twitter.com/tukhtaevoff">
                 <i class="fa-brands fa-twitter"></i>
               </a>
             </li>
